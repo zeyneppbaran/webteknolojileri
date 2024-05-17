@@ -13,7 +13,7 @@
     <!--Navbar Section-->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo">ANASAYFA</a>
+            <a href="#home" id="navbar__logo">ANASAYFA</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -21,44 +21,56 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Hakkında</a>
+                    <a href="#home" class="navbar__links" id="home-page">Anasayfa</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">İlgi Alanları</a>
+                    <a href="#about" class="navbar__links" id="about-page">Hakkında</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Özgeçmiş</a>
+                    <a href="#hobbies" class="navbar__links" id="hobbies-page">İlgi Alanları</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Mirasımız</a>
+                    <a href="#cv" class="navbar__links" id="cv-page">Özgeçmiş</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">İletişim</a>
+                    <a href="#heritage" class="navbar__links" id="heritage-page">Mirasımız</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/tech.html" class="navbar__links">Tech</a>
+                    <a href="#contact" class="navbar__links" id="contact-page">İletişim</a>
                 </li>
-
                 <li class="navbar__btn">
-                    <a href="/" class="button">Giriş Yap</a>
+                    <a href="#sign-up" class="button" id="signup">Giriş Yap</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!--Hero Section-->
-    <div class="main">
-        <div class="main__container">
-            <div class="overlay"></div>    
-            <div class="main__content">
-                <h1>ÇORUM</h1>
-                <h2>Lezzetin ve Kültürün Buluştuğu Yer</h2>
-                <button class="main__btn"><a href="/">Keşfet!</a></button>
-            </div>
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">ÇORUM</h1>
+            <h2 class="hero__description">Lezzetin ve Kültürün Buluştuğu Yer</h2>
+            <button class="main__btn"><a href="#">Keşfet!</a></button>
+            
             <!--<div class="main__img--container">
                 <img src="images/iStock-2048596716.jpg" alt="pic" id="main__img">
             </div>-->
 
+        </div>
+    </div>
+
+    <!-- About Section-->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card">ICON</div>
+            </div>
+            <div class="main__content">
+                <h1>What do we do?</h1>
+                <h2>We help business scale</h2>
+                <p>Schedule a call to learn more about our services</p>
+                <button class="main__btn"><a href="#">Schedule Call</a></button>
+            </div>
         </div>
     </div>
 
@@ -77,8 +89,8 @@
                 <button>Get Started</button>
             </div>
         </div>
-    </div>
+    </div>-->
     <script src="app.js"></script>
 </body>
-</html> -->
+</html>
 
