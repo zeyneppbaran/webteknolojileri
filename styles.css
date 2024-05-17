@@ -118,14 +118,15 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;
-        /*opacity: 0;
-        transition: all 0.5s ease;*/
+        /*top: -1000px;
+        opacity: 0;*/
+        transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
         background: #382117;
 
     }
+    
 
     .navbar__menu .active{
         background: #fff;
@@ -208,7 +209,7 @@
     background-position: center;
 
     display: center;
-    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -234,7 +235,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Metin rengi */
+    color: white;  /*Metin rengi*/
     text-align: center;
 }
 
@@ -357,6 +358,44 @@ main__img--container{
         margin: 2.5rem 0;
     }
 }
+/* Services Section CSS */
+/*.services {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.services h1 {
+    background-color: #382117;
+    background-image: linear-gradient(
+        to right,
+        #212115 0%
+        #61782A 0%
+        #42664C 21%
+        #294026 52%
+        #547C40 78%
+        #151410 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.services__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+*/
+
+
+
 
 
 
