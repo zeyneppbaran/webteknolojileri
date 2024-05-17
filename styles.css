@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: 'IBM Plex Mono',static;
-    scroll-behavior: smooth;
 }
 
 .navbar{
@@ -44,9 +43,9 @@
     font-size: 2rem;
 }
 
-/*.fa-gem{
+.fa-gem{
     margin-right: 0.5rem;
-}*/
+}
 
 .navbar__menu{
     display: flex;
@@ -65,15 +64,14 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
     text-decoration: none;
+    padding: 0 1rem;
     height: 100%;
 }
 
 .navbar__btn{
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 0 1rem;
     width: 100%;
 }
@@ -98,12 +96,12 @@
     background: #D0C8B3;
     transition: all 0.3s ease;
 }
-.navbar__links:hover {
+.navbar__links:hover{
     color: #D0C8B3;
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and(max-width: 960px) {
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -120,14 +118,14 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;
-        opacity: 1;
+        /*top: -1000px;
+        opacity: 0;*/
         transition: all 0.5s ease;
-        /*height: 50vh;*/
+        height: 50vh;
         z-index: -1;
+        background: #fff;
 
     }
-    
 
     .navbar__menu .active{
         background: #fff;
@@ -135,7 +133,7 @@
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 60vh;
+        height: 50vh;
         font-size: 1.6rem;
     }
 
@@ -177,7 +175,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 80px;
         height: 80px;
         margin: 0;
     }
@@ -187,48 +185,58 @@
         cursor: pointer;
     }
 
-    #mobile-menu.is-active .bar:nth-child(2) {
+    #mobile-menu.is-active .bar:nth-child(2){
         opacity: 0;
     }
 
-    #mobile-menu.is-active .bar:nth-child(1) {
+    #mobile-menu.is-active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
 
-    #mobile-menu.is-active .bar:nth-child(3) {
+    #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
 }
 /*Hero Section CSS*/
-.hero{
+.main{
     background-color: #382117;
-    padding: 200px 0;
 }
 
-.hero__container{
+.main__container{
     background-image: url('images/iStock-2048596716.jpg');
     background-size: cover; 
     background-position: center;
 
-    display: flex;
-    flex-direction: column;
+    display: center;
+    /*grid-template-columns: 1fr 1fr;*/
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 90%;
-    text-align: center;
-    max-width: 1200px;
-    padding: 30px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+    max-width: auto;
+    padding: 0 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.266);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah renkte yarı saydam katman */
 }
 
-/*.main__content {
+.main__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;  Metin rengi
+    color: white; /* Metin rengi */
     text-align: center;
-}*/
+}
 
 /*.main__content {
     width: 100%;
@@ -243,15 +251,20 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }*/
 
-.hero__heading {
-    font-size: 100px;
-    margin-bottom: 24px;
-    color: #382117;
+.main__content h1 {
+    font-size: 8rem;
+    background-color: #382117;
+    background-image: linear-gradient(to top, #382117 0%, #f9f9f96a 100% );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
 }
 
-.hero__description {
-    font-size: 60px;
-    background: #fff;
+.main__content h2 {
+    font-size: 2rem;
+    background-color: #fff;
     background-image: linear-gradient(to top, #f9f9f96a 0%, #f9f9f96a 100% );
     background-size: 100%;
     -webkit-background-clip: text;
@@ -260,7 +273,7 @@
     -moz-text-fill-color:transparent;
 }
 
-/*.main__btn {
+.main__btn {
     font-size: 1rem;
     padding: 14px 32px;
     border: none;
@@ -301,120 +314,6 @@
 main__img--container{
     text-align: center;
 }
-
-#main__img{
-    height: 80%;
-    width: 80%;
-}
-*/
-/*Mobile Responsive*/
-@media screen and (max-width: 768px){
-    /*.main__container{
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90vh;
-    }*/
-    
-    .hero__heading{
-        font-size: 60px;
-    }
-    .hero__description {
-        font-size: 40px;
-    }
-}
-
-/*About Section*/
-.main{
-    background-color: #382117;
-    padding: 10rem 0;
-}
-
-.main__conteiner{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 90%;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-}
-
-.main__content{
-    color: #fff;
-    width: 100%;
-}
-
-.main__content h1{
-    font-size: 2rem;
-    background-color: #382117;
-    /*background-image: linear-gradient(to top, #98e290 0%, #fff 100% );*/
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-}
-
-@media screen and (max-width:480px){
-    .main__content h1{
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-    .main__content h2{
-        font-size: 2rem;
-    }
-    .main__btn{
-        padding: 12px 36px;
-        margin: 2.5rem 0;
-    }
-}
-/* Services Section CSS */
-/*.services {
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
-.services h1 {
-    background-color: #382117;
-    background-image: linear-gradient(
-        to right,
-        #212115 0%
-        #61782A 0%
-        #42664C 21%
-        #294026 52%
-        #547C40 78%
-        #151410 100%
-    );
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-}
-
-.services__container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-*/
-
-
-
 
 
 
