@@ -33,7 +33,7 @@
                     <a href="#cv" class="navbar__links">Özgeçmiş</a>
                 </li>
                 <!-- <li class="navbar__item">
-                    <a href="#heritage" class="navbar__links">Mirasımız</a>
+                    <a href="mirasimiz.html" class="navbar__links">Mirasımız</a>
                 </li> -->
                 <li class="navbar__item">
                     <a href="#contact" class="navbar__links">İletişim</a>
@@ -51,7 +51,7 @@
             <div class="main__content">
                 <h1>ÇORUM</h1>
                 <h2>Lezzetin ve Kültürün Buluştuğu Yer</h2>
-                <button  class="main__btn" onclick="window.location.href='mirasimiz.html'">Keşfet!</button>
+                <button  class="main__btn" onclick="document.getElementById('slider').scrollIntoView({ behavior: 'smooth' });">Keşfet!</button>
             </div>
             <!--<div class="main__img--container">
                 <img src="images/iStock-2048596716.jpg" alt="pic" id="main__img">
@@ -79,6 +79,19 @@
     <section id="cv">
         <h1>Özgeçmiş</h1>
         <p>Bu Özgeçmiş bölümüdür.</p>
+    </section>
+    <section id="slider">
+        <div class="slider-wrapper">
+            <div class="slide" data-link="saat-kulesi.html">
+                <img src="images/saat-kulesi.jpg" alt="Saat Kulesi">
+                <p>Saat Kulesi</p>
+            </div>
+            <div class="slide" data-link="alacahoyuk.html">
+                <img src="images/alacahoyuk.jpg" alt="Alacahöyük">
+                <p>Alacahöyük</p>
+            </div>
+            <!-- Diğer slider öğeleri burada eklenebilir -->
+        </div>
     </section>
     <section id="sign-up">
         <h1>Giriş Yap</h1>
