@@ -1,4 +1,5 @@
 *{
+    /*background-color: #382117;*/
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -308,7 +309,7 @@
 .main__btn a {
     position: relative;
     z-index: 2;
-    color: #fff;
+    color: #382117;
     text-decoration: none;
 }
 .main__btn:after{
@@ -337,7 +338,7 @@ main__img--container{
 section{
     background-color: #382117;
     padding: 100px;
-    height: 100vh; /* Her bölümün tam ekran yüksekliğinde olması */
+    height: 200vh; /* Her bölümün tam ekran yüksekliğinde olması */
 }
 @media screen and (max-width: 960px) {
     .menu {
@@ -358,9 +359,14 @@ section{
         display: flex;
     }
 }
+.slider_page{
+    background-color: #382117;
+    padding: 100px;
+    height: 100vh; 
+}
 #slider {
     /*height: min-content;*/
-    width: 40%;
+    width: 55%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -418,5 +424,149 @@ button.next {
 button.prev:hover, button.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+main {
+    padding: 60px 20px 20px 20px;
+    text-align: center;
+}
+
+.content-section {
+    height: 100%;
+    background-color: #D0C8B3;
+    max-width: 800px;
+    margin: 0 auto;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+}
+
+.content-text {
+    text-align: left;
+}
+
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #382117; /* İçerik bölümünün arka plan rengini değiştiriyoruz */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.giris {
+    color: #D0C8B3;
+}
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hobby {
+    background-color: #D0C8B3;
+    color: #382117;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hobby img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hobby h2 {
+    margin: 15px 0;
+}
+
+.hobby p {
+    font-size: 16px;
+}
+
+.hobby a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #382117;
+    font-weight: bold;
+}
+
+.hobby a:hover {
+    text-decoration: underline;
+}
 
 
+#hobilerim {
+    padding: 1em;
+}
+
+.film {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    text-align: center;
+}
+
+.film img {
+    max-width: 100%;
+    height: auto;
+}
+.login-container {
+    display: none; /* Başlangıçta gizle */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto; /* Ortaya hizalama */
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
